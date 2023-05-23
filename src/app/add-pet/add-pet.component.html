@@ -1,0 +1,17 @@
+<h1>Add Pet</h1>
+
+<form (submit)="add()">
+    <label for = "pet-name">Name:</label>
+    <input name = "name" required type = "text" id = "pet-name" [(ngModel)]="pet.name"/>
+
+    
+    <label for = "pet-species">Species:</label>
+    <input name = "species" required type = "text" id = "pet-species" [(ngModel)]="pet.species"/>
+
+    
+    <label for = "pet-food">Food:</label>
+    <input name = "food" required type = "text" id = "pet-food" [(ngModel)]="pet.food"/>
+
+    <input id = "submitButton" [ngStyle] = "{'display': validatePet() ? 'inline' : 'none' }"   type = "submit" value = "Add Pet"/>
+
+</form>

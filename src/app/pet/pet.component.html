@@ -1,0 +1,32 @@
+<div *ngIf = "pet">
+    <h1>Pet id {{pet.id}}</h1>
+    <label for = "pet-name">Name:</label>
+    <input type = "text" id = "pet-name" [(ngModel)] = "pet.name"/>
+    <br />
+    <label for = "pet-species">Species:</label>
+    <input type = "text" id = "pet-species" [(ngModel)] = "pet.species"/>
+    <br />
+    <label for = "pet-food">Food:</label>
+    <input type = "text" id = "pet-food" [(ngModel)] = "pet.food"/>
+    <br />
+    <button (click) = "update()">Update Pet</button>
+    <button (click) = "delete()">Delete Pet</button>
+    <button (click) = "wishList()">Add to Wishlist</button>
+    <button [ngClass] = "userId ? 'show': 'hide'" (click) = "adopt()">Adopt Pet</button>
+</div>
+
+
+<div *ngIf="show_extra_content">
+    <h1>One way data binding:</h1>
+    <h2>Todo: Switch this based on toggle</h2>
+
+    <p>This will be written to the page directly word-for-word</p>
+    
+    <p>2 + 2</p>
+    <p>{{ 2+2 }}</p>
+    <p>{{"Hello " + "World"}}</p>
+    <img width = "200px" src = {{img_url}}/>
+    
+    <!-- Event binding-->
+    <button (click) = "hello()">Click Me</button>
+</div>

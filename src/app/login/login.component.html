@@ -1,0 +1,10 @@
+<div>
+    <h1>Login:</h1>
+    <label for = "person-id">Id:</label>
+    <input type = "text" id = "person-id" [(ngModel)] = "person.id"/>
+    <br />
+    <label for = "person-password">Password:</label>
+    <input type = "password" id = "person-password" [(ngModel)] = "person.password"/>
+    <br/>
+    <button type = "button" (click) = "login()">Login</button>
+</div>

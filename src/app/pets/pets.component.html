@@ -1,0 +1,20 @@
+<h1>All Pets:</h1>
+
+<table>
+    <thead>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Species</th>
+        <th>Food</th>
+    </thead>
+    <tbody>
+        <!-- tr is the element that we want to repeat, so that's where we put the ngFor directive:-->
+        <tr  class = "pet" routerLink="/pet/{{pet.id}}"   *ngFor="let pet of pets">
+            <!-- For each indiv. pet, we render some td elements to show the individual properties:-->
+            <td>{{pet.id}}</td>
+            <td>{{pet.name}}</td>
+            <td>{{pet.species}}</td>
+            <td>{{pet.food}}</td>
+        </tr>
+    </tbody>
+</table>
