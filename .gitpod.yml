@@ -1,0 +1,3 @@
+additionalRepositories:
+  - url: https://github.com/pavithra-nagarajan/pet-project-back-end
+    checkoutLocation: pet-project-back-end
