@@ -1,6 +1,3 @@
-additionalRepositories:
-  - url: https://github.com/pavithra-nagarajan/pet-project-back-end
-    checkoutLocation: pet-project-back-end
 ports:
   - port: 4200
     onOpen: open-browser    
